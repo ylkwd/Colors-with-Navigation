@@ -9,13 +9,13 @@ import UIKit
 
 class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
-    var colors = [Color(name: "red", uiColor: UIColor.red),
-                  Color(name: "orange", uiColor: UIColor.orange),
-                  Color(name: "yellow", uiColor: UIColor.yellow),
-                  Color(name: "green", uiColor: UIColor.green),
-                  Color(name: "blue", uiColor: UIColor.blue),
-                  Color(name: "purple", uiColor: UIColor.purple),
-                  Color(name: "brown", uiColor: UIColor.brown)]
+    var colors = [Color(name: "Red", uiColor: UIColor.red),
+                  Color(name: "Orange", uiColor: UIColor.orange),
+                  Color(name: "Yellow", uiColor: UIColor.yellow),
+                  Color(name: "Green", uiColor: UIColor.green),
+                  Color(name: "Blue", uiColor: UIColor.blue),
+                  Color(name: "Purple", uiColor: UIColor.purple),
+                  Color(name: "Brown", uiColor: UIColor.brown)]
     
     
     
