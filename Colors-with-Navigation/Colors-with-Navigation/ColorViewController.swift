@@ -1,11 +1,10 @@
 //
-//  ColorsViewController.swift
-//  Colors
+//  ColorViewController.swift
+//  Colors-with-Navigation
 //
-//  Created by weizsw on 7/14/17.
-//  Copyright © 2017 Shaowei Zhou. All rights reserved.
+//  Created by Yaoxuan Luan on 10/27/17.
+//  Copyright © 2017 Yaoxuan Luan. All rights reserved.
 //
-
 import UIKit
 
 class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
@@ -25,10 +24,10 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var colorsBackground = ["UIblack"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,11 +56,12 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.isSelected = false
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ColorDetailViewController,
-           let row = colorsTableView.indexPathForSelectedRow?.row {
+            let row = colorsTableView.indexPathForSelectedRow?.row {
             destination.color = colors[row]        }
     }
-
+    
 }
+
