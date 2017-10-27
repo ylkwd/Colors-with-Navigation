@@ -49,6 +49,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = color.name
         
         cell.backgroundColor = color.uiColor
+//        cell.selectionStyle = none
         
         return cell
     }
